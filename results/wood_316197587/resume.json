@@ -1,0 +1,17 @@
+{
+  "graine": 316197587,
+  "categorie": "wood",
+  "n_test": 79,
+  "n_calibration": 39,
+  "n_evaluation": 40,
+  "seuil_image": 0.6287875175476074,
+  "seuil_pixel": 0.423473724207053,
+  "auroc_image": 0.9933333333333334,
+  "auroc_pixel": 0.9181035437718311,
+  "iou_filtre": 0.3031751827052706,
+  "iou_brut": 0.3031751827052706,
+  "dice_filtre": 0.43159172811047786,
+  "dice_brut": 0.43159172811047786,
+  "mae_surface_pct": 8.275858561197916,
+  "latence_ms": 28.18200098000034
+}
