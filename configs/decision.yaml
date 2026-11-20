@@ -1,0 +1,7 @@
+# Règles de décision (valeurs initiales à valider avec un expert métier)
+# Non conforme : image anormale ET surface >= non_conforme_pct
+# Mineur       : image anormale ET surface >= mineur_pct
+# Conforme     : sinon
+seuils:
+  mineur_pct: 0.5
+  non_conforme_pct: 3.0

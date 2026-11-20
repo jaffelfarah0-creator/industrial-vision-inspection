@@ -1,0 +1,23 @@
+# Versions non figées : à épingler (pip freeze) une fois l'environnement validé
+anomalib
+torch
+torchvision
+lightning
+torchmetrics
+kornia
+FrEIA
+open-clip-torch
+opencv-python
+numpy
+pandas
+scikit-learn
+matplotlib
+pyyaml
+kagglehub
+gradio
+jupyter
+# Sprints suivants
+# fastapi
+# uvicorn
+# streamlit
+# reportlab
