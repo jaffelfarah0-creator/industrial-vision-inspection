@@ -58,7 +58,7 @@ PatchCore utilise un backbone préentraîné ; la contribution du projet porte d
 
 - [x] **Prototype Kaggle** : entraînement PatchCore (`wide_resnet50_2`, `layer2`/`layer3`, `coreset_sampling_ratio=0.05` via Anomalib), calcul des métriques, quantification de surface et export (`resume.json` + archive ZIP)
 - [x] **Sprint 1 (en cours de finalisation)** : corrections méthodologiques déjà codées dans le notebook (segmentation objet Otsu + alignement `Resize`/`CenterCrop` + gestion des textures/trous, split stratifié calibration/évaluation sans fuite de seuils, métriques IoU/Dice bruts vs filtrés, latence forward propre) — *synchronisation des modules `src/` via `pousser()`*
-- [ ] **Sprint 2 — Visualisation Streamlit (prochaine étape)** : développement du tableau de bord interactif Streamlit sur un seul écran lisible, sans valeurs codées en dur, alimenté par les sorties exportées (`resume.json`, images alignées, heatmaps, masques filtrés vs GT, score d'anomalie et % de surface défectueuse)
+- [x] **Sprint 2 — Visualisation Streamlit (prochaine étape)** : développement du tableau de bord interactif Streamlit sur un seul écran lisible, sans valeurs codées en dur, alimenté par les sorties exportées (`resume.json`, images alignées, heatmaps, masques filtrés vs GT, score d'anomalie et % de surface défectueuse)
 - [ ] **Sprint 3 — Approfondissement & post-traitement** : raffinement du post-traitement des masques, comparaison PatchCore / PaDiM / STFPM et étude d'ablation
 - [ ] **Sprint 4 — Industrialisation & inspection** : module d'inspection, journalisation SQLite, règles de décision YAML, export ONNX/OpenVINO et API FastAPI
 - [ ] **Sprint 5 — Généralisation & monitoring** : exécution cyclique sur d'autres catégories MVTec AD et suivi/monitoring de dérive
