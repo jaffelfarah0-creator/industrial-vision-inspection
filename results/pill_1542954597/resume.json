@@ -1,0 +1,17 @@
+{
+  "graine": 1542954597,
+  "categorie": "pill",
+  "n_test": 167,
+  "n_calibration": 83,
+  "n_evaluation": 84,
+  "seuil_image": 0.5,
+  "seuil_pixel": 0.5042987009378581,
+  "auroc_image": 0.9718309859154929,
+  "auroc_pixel": 0.9818915738757219,
+  "iou_filtre": 0.3376596149837396,
+  "iou_brut": 0.33338820576764555,
+  "dice_filtre": 0.4653108587748425,
+  "dice_brut": 0.4601494965251649,
+  "mae_surface_pct": 4.020606513805494,
+  "latence_ms": 30.41511927999977
+}
