@@ -1,0 +1,17 @@
+{
+  "graine": 1882046978,
+  "categorie": "leather",
+  "n_test": 124,
+  "n_calibration": 62,
+  "n_evaluation": 62,
+  "seuil_image": 0.5070615410804749,
+  "seuil_pixel": 0.44073193124853577,
+  "auroc_image": 1.0,
+  "auroc_pixel": 0.9920003286638478,
+  "iou_filtre": 0.25272270333924585,
+  "iou_brut": 0.25272270333924585,
+  "dice_filtre": 0.37051528215725077,
+  "dice_brut": 0.37051528215725077,
+  "mae_surface_pct": 1.5446870223335598,
+  "latence_ms": 29.357669420000434
+}
