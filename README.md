@@ -54,17 +54,15 @@ PatchCore utilise un backbone préentraîné ; la contribution du projet porte d
 - **Miroir Kaggle utilisé :** https://www.kaggle.com/datasets/ipythonx/mvtec-ad
 - **Licence :** CC BY-NC-SA 4.0 (usage non commercial), à vérifier sur la page officielle. Le dataset n'est **pas** déposé sur ce dépôt (voir `data/README.md`).
 
-## 7. Étapes de réalisation
+## 7. Étapes de réalisation, Avancement & Feuille de route (Sprints)
 
-- [x] Prototype Kaggle : entraînement PatchCore, métriques, quantification (notebook initial)
-- [ ] **Sprint 0** : structuration du dépôt (ce commit)
-- [ ] **Sprint 1** : corrections méthodologiques (segmentation Otsu, calibration sans fuite, IoU brut vs filtré, latence propre)
-- [ ] **Sprint 2** : post-traitement des masques, comparaison PatchCore / PaDiM / STFPM, ablation
-- [ ] **Sprint 3** : module d'inspection, journalisation SQLite, règles de décision YAML
-- [ ] **Sprint 4** : export ONNX/OpenVINO + API FastAPI
-- [ ] **Sprint 5** : dashboard Streamlit + rapports PDF
-- [ ] **Sprint 6** : généralisation à d'autres catégories, monitoring de dérive
-
+- [x] **Prototype Kaggle** : entraînement PatchCore (`wide_resnet50_2`, `layer2`/`layer3`, `coreset_sampling_ratio=0.05` via Anomalib), calcul des métriques, quantification de surface et export (`resume.json` + archive ZIP)
+- [x] **Sprint 1 (en cours de finalisation)** : corrections méthodologiques déjà codées dans le notebook (segmentation objet Otsu + alignement `Resize`/`CenterCrop` + gestion des textures/trous, split stratifié calibration/évaluation sans fuite de seuils, métriques IoU/Dice bruts vs filtrés, latence forward propre) — *synchronisation des modules `src/` via `pousser()`*
+- [ ] **Sprint 2 — Visualisation Streamlit (prochaine étape)** : développement du tableau de bord interactif Streamlit sur un seul écran lisible, sans valeurs codées en dur, alimenté par les sorties exportées (`resume.json`, images alignées, heatmaps, masques filtrés vs GT, score d'anomalie et % de surface défectueuse)
+- [ ] **Sprint 3 — Approfondissement & post-traitement** : raffinement du post-traitement des masques, comparaison PatchCore / PaDiM / STFPM et étude d'ablation
+- [ ] **Sprint 4 — Industrialisation & inspection** : module d'inspection, journalisation SQLite, règles de décision YAML, export ONNX/OpenVINO et API FastAPI
+- [ ] **Sprint 5 — Généralisation & monitoring** : exécution cyclique sur d'autres catégories MVTec AD et suivi/monitoring de dérive
+- [ ] **Sprint 6 — Finalisation GitHub, Rapport & Démo** : organisation complète du dépôt GitHub (`src/`, `app/` Streamlit, `README.md`, `requirements.txt`), rédaction du rapport académique final et préparation de la démo live
 ## 8. Résultats préliminaires
 
 Obtenus sur `metal_nut` avec le prototype initial, **avant** correction de la fuite de seuil : ils sont donc optimistes et seront remplacés par les résultats du protocole corrigé (voir `results/`).
