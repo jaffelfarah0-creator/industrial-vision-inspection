@@ -1,0 +1,17 @@
+{
+  "graine": 1764350070,
+  "categorie": "hazelnut",
+  "n_test": 110,
+  "n_calibration": 55,
+  "n_evaluation": 55,
+  "seuil_image": 0.5,
+  "seuil_pixel": 0.5120730954408645,
+  "auroc_image": 1.0,
+  "auroc_pixel": 0.9899062087281075,
+  "iou_filtre": 0.3731564462270543,
+  "iou_brut": 0.37312793877324824,
+  "dice_filtre": 0.5191175054390101,
+  "dice_brut": 0.5177889945378947,
+  "mae_surface_pct": 11.283786404015403,
+  "latence_ms": 40.54978291999987
+}
